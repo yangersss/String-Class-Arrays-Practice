@@ -64,13 +64,24 @@ public class strArr {
                     current_lowest = j;
                 }
             }
+            
+            // for the songs array
             String temp = songs[i];
             songs[i] = songs[current_lowest];
             songs[current_lowest] = temp;
+
+            // for the artists array
+            String temp2 = artists[i];
+            artists[i] = artists[current_lowest];
+            artists[current_lowest] = temp2;
         }
 
         System.out.println("\n\n\n SORTED ARRAY TIME YAYY \n\n\n");
         for (String s : songs){
+            System.out.println(s);
+        }
+        System.out.println("\n\n\n AND NOW THE ARTISTS ARRAY \n\n\n");
+        for (String s : artists){
             System.out.println(s);
         }
     }
